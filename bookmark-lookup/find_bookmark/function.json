@@ -1,0 +1,39 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "request",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "bookmark",
+      "direction": "in",
+      "type": "cosmosDB",
+      "connectionStringSetting": "CosmosDbConnectionString",
+      "databaseName": "func-io-learn-db",
+      "collectionName": "Bookmarks",
+      "id": "{Query.id}",
+      "partitionKey": "{Query.id}"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "newbookmark",
+      "databaseName": "func-io-learn-db",
+      "collectionName": "Bookmarks",
+      "createIfNotExists": "true",
+      "connectionStringSetting": "CosmosDbConnectionString"
+    }
+  ]
+}
