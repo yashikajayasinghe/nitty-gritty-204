@@ -1,8 +1,9 @@
 {
-    "azureFunctions.deploySubpath": "bookmark-lookup",
+    "azureFunctions.deploySubpath": "proposal-approval",
     "azureFunctions.scmDoBuildDuringDeployment": true,
     "azureFunctions.pythonVenv": ".venv",
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~4",
-    "debug.internalConsoleOptions": "neverOpen"
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectSubpath": "proposal-approval"
 }
