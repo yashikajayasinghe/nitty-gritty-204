@@ -9,8 +9,10 @@
 import logging
 
 
-def main(approvalStatus: str) -> str:
+def main(name: str) -> str:
     """
-    Approval task
+    function that is called when the Approval function doesn't respond within 20 seconds.
     """
-    return f"Your project design proposal has been {approvalStatus}!"
+    logging.info("Escalation task has been triggered.")
+    
+    return f"ESCALATION : You have not approved the project design proposal - reassigning to your Manager: {name}!"

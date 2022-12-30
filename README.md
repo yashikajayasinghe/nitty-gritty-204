@@ -1,7 +1,4 @@
 # nitty-gritty-204
-Sharpening Tools
+Sharpening Tools for Azure Function App Development with Python
 
-## Write data with output bindings
-> https://learn.microsoft.com/en-us/training/modules/chain-azure-functions-data-using-bindings/7-write-data-with-output-bindings-portal-lab?pivots=javascript
->
-> TODO:: Add an Azure Queue Storage output binding
+> Reference material: https://learn.microsoft.com/en-us/training/paths/create-serverless-applications/
