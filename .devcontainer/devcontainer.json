@@ -37,7 +37,9 @@
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "rangav.vscode-thunder-client"
+                "rangav.vscode-thunder-client",
+                "streetsidesoftware.code-spell-checker",
+                "ms-vscode.vscode-node-azure-pack"
             ]
         }
     },
