@@ -1,7 +1,7 @@
 """
 This script sends a message to the queue
 """
-# Path: sales-team-app/receive_msg_from_queue.py
+# Path: sales-team-app/send_and_receive_msg_with_sb_queue.py
 import os
 from azure.servicebus import ServiceBusClient, ServiceBusMessage
 
@@ -26,8 +26,8 @@ def receive_message_from_queue():
 
     with SB_CLIENT.get_queue_receiver(queue_name=QUEUE_NAME) as receiver:
         messages = receiver.receive_messages(max_message_count=1, max_wait_time=5)
-        for orgmessage in messages:
-            print(f"Message received: {orgmessage}")
+        for original_message in messages:
+            print(f"Message received: {original_message}")
 
 if __name__ == '__main__':
     send_msg_to_queue()

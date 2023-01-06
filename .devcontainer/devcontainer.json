@@ -39,7 +39,8 @@
                 "ms-python.vscode-pylance",
                 "rangav.vscode-thunder-client",
                 "streetsidesoftware.code-spell-checker",
-                "ms-vscode.vscode-node-azure-pack"
+                "ms-vscode.vscode-node-azure-pack",
+                "github.copilot"
             ]
         }
     },
