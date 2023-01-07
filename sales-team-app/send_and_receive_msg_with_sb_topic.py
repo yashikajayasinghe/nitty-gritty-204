@@ -3,7 +3,7 @@ import os
 
 CONNECTION_STR = os.getenv("AZURE_SERVICEBUS_CONNECTION_STRING")
 TOPIC_NAME = "salesperformancemessages"
-SUBSCRIPTION_NAME = "Americas"
+SUBSCRIPTION_NAME = "EuropeAndAsia"
 
 SB_CLIENT = ServiceBusClient.from_connection_string(conn_str=CONNECTION_STR)
 
