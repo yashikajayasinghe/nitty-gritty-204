@@ -40,7 +40,8 @@
                 "rangav.vscode-thunder-client",
                 "streetsidesoftware.code-spell-checker",
                 "ms-vscode.vscode-node-azure-pack",
-                "github.copilot"
+                "github.copilot",
+                "shd101wyy.markdown-preview-enhanced"
             ]
         }
     },
