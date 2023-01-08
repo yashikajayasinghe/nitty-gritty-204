@@ -5,7 +5,7 @@ import os
 import uuid
 import json
 import base64
-import time
+# import time
 
 from azure.storage.queue import (
     QueueClient,
@@ -38,12 +38,13 @@ news = {
 }
 news_str = json.dumps(news, indent=4)
 queue_client.send_message(base64.b64encode(news_str.encode("utf-8")))
-
-# peak the message then delete it
-messages = queue_client.peek_messages()
-for message in messages:
-    print(base64.b64decode(message.content).decode('utf-8'))
-    # queue_client.delete_message(message.id, None)
+# time.sleep(10)
+# receive the message from the queue
+message = queue_client.receive_message()
+print(base64.b64decode(message.content).decode('utf-8'))
+# time.sleep(5)
+# delete the message from the queue
+queue_client.delete_message(message.id, message.pop_receipt)
 
 # Eventually Delete the queue
 # time.sleep(10)

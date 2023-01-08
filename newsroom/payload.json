@@ -1,8 +1,0 @@
-{
-    "header": "This is a Breaking News Alert",
-    "body": "This is the body of the alert",
-    "link": "http://www.google.com",
-    "linkText": "Click here to go to Google",
-    "messageType": "alert",
-    "messageId": "1234567890"
-}
