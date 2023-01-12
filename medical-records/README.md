@@ -17,7 +17,7 @@
 ```
 "filter": {
     "subjectBeginsWith": "/blobServices/default/containers/medics/blobs",
-    "subjectEndsWith": ".txt"
+    "subjectEndsWith": ".json"
     }
 ```
 6. Manually create a blob in the storage and monitor `med-recs` app insights logs to verify the successful integration
