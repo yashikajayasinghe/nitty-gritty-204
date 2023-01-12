@@ -33,7 +33,7 @@ if not os.path.isdir(dir_path):
     os.mkdir(dir_path)
 
 # Creates a json file in the local directory.
-file_name = str(uuid.uuid4()) + first_name + "_"+last_name + "_med_recs.json"
+file_name = str(uuid.uuid4()) + "_"+ first_name + "_"+last_name + "_med_recs.json"
 local_file_path = os.path.join(dir_path, file_name)
 with open(local_file_path, "w") as f:
     json.dump(test_report_dict, f, indent=4)
