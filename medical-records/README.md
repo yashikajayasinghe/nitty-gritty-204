@@ -31,3 +31,4 @@
 2. https://learn.microsoft.com/en-us/azure/event-grid/event-schema-blob-storage?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=event-grid-event-schema
 3. https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-event-overview
 4. https://learn.microsoft.com/en-us/azure/event-grid/system-topics
+5. https://learn.microsoft.com/en-us/python/api/overview/azure/storage-blob-readme?view=azure-python
