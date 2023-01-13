@@ -23,7 +23,8 @@
 6. Manually create a blob in the storage and monitor `med-recs` app insights logs to verify the successful integration
 7. Implement a python function to upload a custom file to the blob storage
 8. Add cosmos db output binding to the function app.
-9. 
+9. Add cosmosdb Connection string to app settings : https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-cosmos-db-vs-code?tabs=in-process&pivots=programming-language-csharp#update-your-function-app-settings
+
 
 ### Other Ref:
 

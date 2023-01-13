@@ -5,6 +5,15 @@
       "type": "eventGridTrigger",
       "name": "event",
       "direction": "in"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "newtestreport",
+      "databaseName": "lipid-profiles",
+      "collectionName": "Items",
+      "createIfNotExists": "true",
+      "connectionStringSetting": "CosmosDbConnectionString"
     }
   ]
 }
