@@ -1,5 +1,10 @@
 """
-This script creates a file in the current directory and uploads it to a blob storage container.
+This script creates a file with random data in the current directory and uploads it to a blob storage container.
+
+TODO:: This functionality is supposed to be included in another function app
+ATM, this script is the manual trigger for the function app 'med-recs'
+
+Run this script from the terminal using the command: `Python create_and_upload_file_to_blob_storage.py`
 """
 import os
 import uuid
@@ -15,6 +20,7 @@ first_name = random.choice(first_names_set)
 last_name = random.choice(last_names_set)
 name: str = first_name+" "+last_name
 test_report_dict = {
+    "id": str(uuid.uuid4()),
     "Patient": name,
     "Age": random.randint(25, 50),
     "ReportType": "Lipid Blood Test",
@@ -34,6 +40,7 @@ if not os.path.isdir(dir_path):
 
 # Creates a json file in the local directory.
 file_name = str(uuid.uuid4()) + "_"+ first_name + "_"+last_name + "_med_recs.json"
+
 local_file_path = os.path.join(dir_path, file_name)
 with open(local_file_path, "w") as f:
     json.dump(test_report_dict, f, indent=4)
