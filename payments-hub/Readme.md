@@ -2,3 +2,5 @@
 
 > ref: https://learn.microsoft.com/en-us/training/modules/enable-reliable-messaging-for-big-data-apps-using-event-hubs/5-exercise-configure-applications-to-send-or-receive-messages-through-an-event-hub
 > https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-python-get-started-send
+
+> :memo: **Note:** Azure Resource has been deleted. To Run this script, it needs re-creating Azure Resources in the portal
