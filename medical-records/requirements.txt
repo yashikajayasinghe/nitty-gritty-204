@@ -1,2 +1,5 @@
 azure-storage-blob
 azure-functions
+azure-keyvault-keys 
+azure-keyvault-secrets
+azure-identity
